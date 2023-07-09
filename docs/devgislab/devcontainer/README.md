@@ -23,7 +23,7 @@ touch app\testapp.txt
 # Note : Be sure of these files locations
 ```
 
-6. Then Run **`Git`** Commands to push the changes to GitHub Repository:
+6. Then Run **`Git`** Commands to push the changes to GitHub Repository (Refresh GitHub Repository to see the new changes):
 
 ```git
 # check the Project location using pwd command
@@ -53,3 +53,17 @@ Try NOT to create a very complicated DevContainer, Start Simple.
 ```
 
 9. Check the existence of the folders and the test files in the DevContainer , In case these files are not exists in the folders , try create new ones from within the DevContainer and check if they will be also created in the Project local folders or not?
+10. After creating these files try to run the menu option of  **`Dev Containers: Rebuild Containers`**
+
+{% hint style="danger" %}
+Every time you got the Error , Try First to Edit the file devcontainer.json in Recovery mode  (Check for Spelling mistakes in the code), otherwise, Revert the changes from Git and Rebuild the Dev Container
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/18_devcontainers-rebuild-and-reopen-in-container.png" alt=""><figcaption></figcaption></figure>
+
+11. After Editing the `devcontainer.json` file in recovery mode, rebuild the Dev Container using this command from the Command Palette: **`Dev Containers; Rebuild and reopen in Container`**
+
+### In case the Error Percesisted
+
+1. Restart Docker and VSCode: Try restarting both Docker and Visual Studio Code. This can help ensure a fresh start and clear any temporary issues.
+2. Revert the changes: If the error persists, you can revert the changes to the previous mount location and see if the DevContainer works without any issues. This will help confirm if the changes to the mount location are causing the problem.
