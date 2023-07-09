@@ -12,11 +12,17 @@
 	// let these folders be available also into the DevContainer
 	"remoteUser": "vscode",
 	"mounts": [
+		"source=\"%USERPROFILE%\\Desktop\\PROJECTS\\DevGisLAB\\log\",target=/home/vscode/dev/log,type=bind,consistency=cached",
+		"source=\"%USERPROFILE%\\Desktop\\PROJECTS\\DevGisLAB\\script\",target=/home/vscode/dev/script,type=bind,consistency=cached",
+		"source=\"%USERPROFILE%\\Desktop\\PROJECTS\\DevGisLAB\\src\",target=/home/vscode/dev/src,type=bind,consistency=cached",
+		"source=\"%USERPROFILE%\\Desktop\\PROJECTS\\DevGisLAB\\app\",target=/home/vscode/dev/app,type=bind,consistency=cached"
+	]
+	/* "mounts": [
 		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/log},target=/home/vscode/dev/log,type=bind,consistency=cached",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/script},target=/home/vscode/dev/script,type=bind,consistency=cached",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/src},target=/home/vscode/dev/src,type=bind,consistency=cached",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/app},target=/home/vscode/dev/app,type=bind,consistency=cached"
-	]
+	] */
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
