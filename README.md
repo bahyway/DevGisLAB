@@ -1,1 +1,1 @@
-DevContainer, MiniConda, Python, PostgreSQL ,Numpy, Pandas, GeoPandas , GDAL/OGR & More..
+DevContainer, MiniConda, Ansible, Python 3.10, PostgreSQL ,Numpy, Pandas, GeoPandas , GDAL/OGR & More..
