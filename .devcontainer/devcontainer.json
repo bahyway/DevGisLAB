@@ -21,7 +21,10 @@
 		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/log},target=/home/vscode/dev/log,type=bind,consistency=cached",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/script},target=/home/vscode/dev/script,type=bind,consistency=cached",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/src},target=/home/vscode/dev/src,type=bind,consistency=cached",
-		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/app},target=/home/vscode/dev/app,type=bind,consistency=cached"
+		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/app},target=/home/vscode/dev/app,type=bind,consistency=cached",
+		// Add 'db' folder and two subfolders 'data' & 'logs' to hold PostgreSQL data
+		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/db/data,target=/home/vscode/dev/db/data,type=bind,consistency=cached",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/db/logs,target=/home/vscode/dev/db/logs,type=bind,consistency=cached"
 	]
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
