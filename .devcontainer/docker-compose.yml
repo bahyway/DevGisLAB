@@ -13,14 +13,13 @@ services:
 
     user: vscode # Specify the user as vscode
 
-   volumes:
-  - ..:/workspace:cached
-  - ./db/data:/var/lib/postgresql/data # Mount local folder for PostgreSQL data
-  - ./db/logs:/var/log/postgresql # Mount local folder for PostgreSQL logs
-  - ./app:/home/vscode/dev/app # Mount local 'app' folder
-  - ./app/log:/home/vscode/dev/app/log # Mount local 'log' subfolder of 'app'
-  - ./app/script:/home/vscode/dev/app/script # Mount local 'script' subfolder of 'app'
-
+    volumes:
+      - ..:/workspace:cached
+      - ./db/data:/var/lib/postgresql/data # Mount local folder for PostgreSQL data
+      - ./db/logs:/var/log/postgresql # Mount local folder for PostgreSQL logs
+      - ./app:/home/vscode/dev/app # Mount local 'app' folder
+      - ./app/log:/home/vscode/dev/app/log # Mount local 'log' subfolder of 'app'
+      - ./app/script:/home/vscode/dev/app/script # Mount local 'script' subfolder of 'app'
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
