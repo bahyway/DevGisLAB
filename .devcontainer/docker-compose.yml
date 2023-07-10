@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: ..
-      dockerfile: .devcontainer/Dockerfile2
+      dockerfile: .devcontainer/Dockerfile
       args:
         # Optional Node.js version to install
         NODE_VERSION: "lts/*"
