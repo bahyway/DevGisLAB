@@ -11,6 +11,8 @@ services:
     env_file:
       - .env
 
+    user: vscode # Specify the user as vscode
+
     volumes:
       - ..:/workspace:cached
       - ./db/data:/var/lib/postgresql/data # Mount local folder for PostgreSQL data
@@ -32,6 +34,3 @@ services:
       - ./db/logs:/var/log/postgresql # Mount local folder for PostgreSQL logs
     env_file:
       - .env
-
-volumes:
-  postgres-data:
