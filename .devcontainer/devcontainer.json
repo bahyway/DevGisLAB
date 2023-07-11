@@ -4,7 +4,7 @@
 	"name": "Miniconda (Python 3) & PostgreSQL",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
-	"workspaceFolder": "C:/Users/Bahaa/Desktop/PROJECTS/DevGisLAB",
+	"workspaceFolder": "C:\\Users\\Bahaa\\Desktop\\PROJECTS\\DevGisLAB",
 	//"workspaceFolder": "/workspace/DevGisLAB", // Update this line with the root directory of your project
 	// "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
