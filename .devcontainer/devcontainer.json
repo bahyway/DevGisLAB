@@ -4,7 +4,10 @@
 	"name": "Miniconda (Python 3) & PostgreSQL",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
-	"workspaceFolder": "C:\\Users\\Bahaa\\Desktop\\PROJECTS\\DevGisLAB",
+	// Change the absolute path to this variable path:${workspaceFolderBasename}
+	// https://code.visualstudio.com/docs/editor/variables-reference
+	//"workspaceFolder": "C:\\Users\\Bahaa\\Desktop\\PROJECTS\\DevGisLAB",
+	"workspaceFolder": "${workspaceFolderBasename}",
 	//"workspaceFolder": "/workspace/DevGisLAB", // Update this line with the root directory of your project
 	// "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
@@ -22,21 +25,6 @@
 	"remoteUser": "vscode",
 	// BF add: Add four project folders: logs,scripts,app and src 
 	// let these folders be available also into the DevContainer
-	/* "mounts": [
-		"source=\"%USERPROFILE%\\Desktop\\PROJECTS\\DevGisLAB\\log\",target=/home/vscode/dev/log,type=bind,consistency=cached",
-		"source=\"%USERPROFILE%\\Desktop\\PROJECTS\\DevGisLAB\\script\",target=/home/vscode/dev/script,type=bind,consistency=cached",
-		"source=\"%USERPROFILE%\\Desktop\\PROJECTS\\DevGisLAB\\src\",target=/home/vscode/dev/src,type=bind,consistency=cached",
-		"source=\"%USERPROFILE%\\Desktop\\PROJECTS\\DevGisLAB\\app\",target=/home/vscode/dev/app,type=bind,consistency=cached"
-	] */
-	/* "mounts": [
-		// Add 'db' folder and two subfolders 'data' & 'logs' to hold PostgreSQL data
-		// Change the location of folder 'log' and 'script' , puth both under 'app' folder
-		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/src},target=/home/vscode/dev/src,type=bind,consistency=cached",
-		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/app/log},target=/home/vscode/dev/app/log,type=bind,consistency=cached",
-		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/app/script},target=/home/vscode/dev/app/script,type=bind,consistency=cached",
-		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/db/data},target=/home/vscode/dev/db/data,type=bind,consistency=cached",
-		"source=${localEnv:HOME}${localEnv:USERPROFILE/Desktop/PROJECTS/DevGisLAB/db/logs},target=/home/vscode/dev/db/logs,type=bind,consistency=cached"
-	] */
 	"mounts": [
 		"source=C:/Users/Bahaa/Desktop/PROJECTS/DevGisLAB/src,target=/home/vscode/dev/src,type=bind,consistency=cached",
 		"source=C:/Users/Bahaa/Desktop/PROJECTS/DevGisLAB/app/log,target=/home/vscode/dev/app/log,type=bind,consistency=cached",
