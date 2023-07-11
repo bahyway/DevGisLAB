@@ -7,7 +7,8 @@
 	// Change the absolute path to this variable path:${workspaceFolderBasename}
 	// https://code.visualstudio.com/docs/editor/variables-reference
 	//"workspaceFolder": "C:\\Users\\Bahaa\\Desktop\\PROJECTS\\DevGisLAB",
-	"workspaceFolder": "${workspaceFolder}",
+	"workspaceFolder": "C:/Users/Bahaa/Desktop/PROJECTS/DevGisLAB",
+	//"workspaceFolder": "${workspaceFolder}",
 	//"workspaceFolder": "/workspace/DevGisLAB", // Update this line with the root directory of your project
 	// "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
